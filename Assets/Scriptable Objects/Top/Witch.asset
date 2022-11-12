@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
+  m_Name: Witch
+  m_EditorClassIdentifier: 
+  bodyPartName: Witch
+  bodyPartAnimationID: 1
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: bf63dae25c372604ba3ad541bf1a7109, type: 2}
+  - {fileID: 7400000, guid: 8f10e39d84f3e58419496035da299e7b, type: 2}
+  - {fileID: 7400000, guid: cbec219103dd55643ae0ef2947870563, type: 2}
+  - {fileID: 7400000, guid: 9e0c23d0a6528234892620f133fc1f2e, type: 2}
+  - {fileID: 7400000, guid: fafa0830b7e5e5347a7bd01e0c4fa8ed, type: 2}
+  - {fileID: 7400000, guid: 26795b13115d3ae41ba797c56fc8bf15, type: 2}
+  - {fileID: 7400000, guid: 93b08e3721773b843aee4c9a57ccdaff, type: 2}
+  - {fileID: 7400000, guid: 85833d7f572229a4492b403564d7d29e, type: 2}
