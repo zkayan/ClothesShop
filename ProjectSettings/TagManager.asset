@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Skin
+    uniqueID: 3010659501
+    locked: 0
+  - name: Glasses
+    uniqueID: 2757038165
+    locked: 0
+  - name: Hair
+    uniqueID: 964659289
+    locked: 0
+  - name: Bottom
+    uniqueID: 2434579937
+    locked: 0
+  - name: Top
+    uniqueID: 186397549
+    locked: 0
+  - name: Shoes
+    uniqueID: 1126717519
+    locked: 0
