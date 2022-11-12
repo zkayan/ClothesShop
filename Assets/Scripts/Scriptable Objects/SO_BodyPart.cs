@@ -5,6 +5,7 @@ using UnityEngine;
 public class SO_BodyPart : ScriptableObject
 {
     public string ClothName;
+    public float ClothPrice;
     public string bodyPartType;
     public int bodyPartAnimationID;
 

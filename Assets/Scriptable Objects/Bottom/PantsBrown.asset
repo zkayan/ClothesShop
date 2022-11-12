@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PantsBrown
   m_EditorClassIdentifier: 
   ClothName: Pants Brown
+  ClothPrice: 20
   bodyPartType: Bottom
   bodyPartAnimationID: 3
   allBodyPartAnimations:

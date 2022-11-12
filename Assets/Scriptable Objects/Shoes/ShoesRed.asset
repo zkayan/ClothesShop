@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
   m_Name: ShoesRed
   m_EditorClassIdentifier: 
-  ClothName: Shoes Black
+  ClothName: Shoes Red
+  ClothPrice: 8
   bodyPartType: Shoes
-  bodyPartAnimationID: 0
+  bodyPartAnimationID: 1
   allBodyPartAnimations:
-  - {fileID: 7400000, guid: 750c40b6963ed8d488c64039d859ec60, type: 2}
-  - {fileID: 7400000, guid: d548f5f2da9863a4f84328c0bec1b739, type: 2}
-  - {fileID: 7400000, guid: 43ee6a34ccd07b3499b64d2e7dc55dec, type: 2}
-  - {fileID: 7400000, guid: bd311371c7a240240a986000f40b8043, type: 2}
-  - {fileID: 7400000, guid: 71f2fb22ae8070144a0443e386a2bdab, type: 2}
-  - {fileID: 7400000, guid: d540c51d01de9664faa383acbff81f6b, type: 2}
-  - {fileID: 7400000, guid: da65140b0244b8147a0a959ceeb7b055, type: 2}
-  - {fileID: 7400000, guid: 817206d0cb28a1844a8fc7bfabb3889f, type: 2}
+  - {fileID: 7400000, guid: 5c474fe8fd67eea43ab9a129911de134, type: 2}
+  - {fileID: 7400000, guid: c4ff713088d6a504abec10df3b9caca6, type: 2}
+  - {fileID: 7400000, guid: 5d04b33346b3b5f4dafb00159d97cbbd, type: 2}
+  - {fileID: 7400000, guid: 90459ef2ff8964445a96f487f165019d, type: 2}
+  - {fileID: 7400000, guid: 3bce3c6caceab9241af89238b58e07b1, type: 2}
+  - {fileID: 7400000, guid: 07261bd8ebe21fc44afdecd60f0953e8, type: 2}
+  - {fileID: 7400000, guid: 9f89db427264b2d459bbc341f4e1ab86, type: 2}
+  - {fileID: 7400000, guid: 2a65675478de71c479aeb268adcf2f2a, type: 2}

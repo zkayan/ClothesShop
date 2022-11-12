@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FloralGreen
   m_EditorClassIdentifier: 
   ClothName: Floral Green
+  ClothPrice: 10
   bodyPartType: Top
   bodyPartAnimationID: 0
   allBodyPartAnimations:

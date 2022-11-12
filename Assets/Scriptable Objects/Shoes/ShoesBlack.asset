@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ShoesBlack
   m_EditorClassIdentifier: 
   ClothName: Shoes Black
+  ClothPrice: 13
   bodyPartType: Shoes
   bodyPartAnimationID: 0
   allBodyPartAnimations:
