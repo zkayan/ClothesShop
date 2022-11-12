@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
   m_Name: PantsBrown
   m_EditorClassIdentifier: 
-  bodyPartName: Pants brown
+  ClothName: Pants Brown
+  bodyPartType: Bottom
   bodyPartAnimationID: 3
   allBodyPartAnimations:
   - {fileID: 7400000, guid: dba40df5474627241b189a293bca9e9f, type: 2}

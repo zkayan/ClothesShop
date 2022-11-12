@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
   m_Name: FloralGreen
   m_EditorClassIdentifier: 
-  bodyPartName: Floral Green
+  ClothName: Floral Green
+  bodyPartType: Top
   bodyPartAnimationID: 0
   allBodyPartAnimations:
-  - {fileID: 7400000, guid: aa69e33ea393f3d46bcce8612c9d26fa, type: 2}
+  - {fileID: 7400000, guid: 7cb87f460b83a5147b5c5d616d865f44, type: 2}
   - {fileID: 7400000, guid: 12b119e386c6e324aa35380628dd90d3, type: 2}
   - {fileID: 7400000, guid: 320474e50603c6e4bbc69a938744ac69, type: 2}
   - {fileID: 7400000, guid: 5b9c4e46476f21b4593b605b4a7d295e, type: 2}

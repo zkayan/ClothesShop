@@ -4,26 +4,20 @@ using UnityEngine;
 
 public class ChangeClothes : MonoBehaviour
 {
-    //public SpriteRenderer bodyParty;
 
-    public SO_BodyPart[] clothAnimationClip;
+    public SO_CharacterBody clothAnimationClip;
 
-    public string position = "Down";
+    public SO_BodyPart test;
 
-    private string _state = "Walking";
-
-    //public List<Sprite> options = new List<Sprite>();
+    private string[] _animStates = { "IdleDown", "IdleUp", "IdleRight", "IdleLeft", "WalkingDown", "WalkingUp", "WalkingRight", "WalkingLeft" };
 
     protected Animator animator;
 
     protected AnimatorOverrideController animatorOverrideController;
 
-    private int _currentOption = 0;
-
     private void Start()
     {
         animator = GetComponent<Animator>();
-        _currentOption = 0;
 
         animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         animator.runtimeAnimatorController = animatorOverrideController;
@@ -31,58 +25,25 @@ public class ChangeClothes : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("l"))
-        {
-            NextOption();
-        }
         if (Input.GetKeyDown("k"))
         {
-            PreviousOption();
+            Change(test);
         }
     }
 
-    public void NextOption()
+    public void Change(SO_BodyPart newPart)
     {
-        _currentOption++;
-
-        if (_currentOption >= clothAnimationClip.Length)
+        foreach(BodyPart charBodyPart in clothAnimationClip.characterBodyParts)
         {
-            _currentOption = 0;
-        }
-
-        Change();
-    }
-
-    public void PreviousOption()
-    {
-        _currentOption--;
-
-        if (_currentOption < 0)
-        {
-            _currentOption = clothAnimationClip.Length - 1;
-        }
-
-        Change();
-    }
-
-    public void ChangeState(string newState)
-    {
-        _state = newState;
-        Change();
-    }
-
-    public void Change()
-    {
-        foreach (SO_BodyPart bodyPart in clothAnimationClip)
-        {
-            if (bodyPart.bodyPartAnimationID == _currentOption)
+            if(charBodyPart.bodyPartType == newPart.bodyPartType)
             {
-                foreach (AnimationClip anim in bodyPart.allBodyPartAnimations)
+                foreach (string state in _animStates)
                 {
-                    if (anim.name.Contains(_state + position))
-                    {
-                        animatorOverrideController["FloralGreen"+_state+"Down"] = anim;
-                    }
+                    string inicialAnim = charBodyPart.bodyPart.allBodyPartAnimations.Find(anim => anim.name.Contains(state)).name;
+
+                    AnimationClip currentAnim = newPart.allBodyPartAnimations.Find(anim => anim.name.Contains(state));
+
+                    animatorOverrideController[inicialAnim] = currentAnim;
                 }
             }
         }
