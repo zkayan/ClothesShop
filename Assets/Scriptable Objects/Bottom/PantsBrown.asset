@@ -15,7 +15,8 @@ MonoBehaviour:
   ClothName: Pants Brown
   ClothPrice: 20
   bodyPartType: Bottom
-  bodyPartAnimationID: 3
+  bodyPartAnimationID: 2
+  Icon: {fileID: 21300000, guid: 6ef890ddc0344e941b82a08dc3f11c13, type: 3}
   allBodyPartAnimations:
   - {fileID: 7400000, guid: dba40df5474627241b189a293bca9e9f, type: 2}
   - {fileID: 7400000, guid: c1db37dee1a9f704194a10dd97ce37e7, type: 2}

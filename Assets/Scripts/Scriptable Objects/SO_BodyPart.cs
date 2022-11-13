@@ -8,6 +8,7 @@ public class SO_BodyPart : ScriptableObject
     public float ClothPrice;
     public string bodyPartType;
     public int bodyPartAnimationID;
+    public Sprite Icon;
 
     public List<AnimationClip> allBodyPartAnimations = new List<AnimationClip>();
 }

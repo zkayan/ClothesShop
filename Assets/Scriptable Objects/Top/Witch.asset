@@ -16,6 +16,7 @@ MonoBehaviour:
   ClothPrice: 70
   bodyPartType: Top
   bodyPartAnimationID: 1
+  Icon: {fileID: 21300000, guid: 43dd212f24d744e41be8764ee8154e9a, type: 3}
   allBodyPartAnimations:
   - {fileID: 7400000, guid: 3119be5e3951c94469fda31fa7821548, type: 2}
   - {fileID: 7400000, guid: cbec219103dd55643ae0ef2947870563, type: 2}

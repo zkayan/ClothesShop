@@ -16,6 +16,7 @@ MonoBehaviour:
   ClothPrice: 8
   bodyPartType: Shoes
   bodyPartAnimationID: 1
+  Icon: {fileID: 21300000, guid: 33c73799cd0880143822217200ef63ec, type: 3}
   allBodyPartAnimations:
   - {fileID: 7400000, guid: 5c474fe8fd67eea43ab9a129911de134, type: 2}
   - {fileID: 7400000, guid: c4ff713088d6a504abec10df3b9caca6, type: 2}

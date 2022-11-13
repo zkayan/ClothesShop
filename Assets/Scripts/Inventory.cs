@@ -16,6 +16,8 @@ public class Inventory : MonoBehaviour
 
     private ChangeClothes _changeClothes;
 
+    public GameObject inventoryPanel;
+
     private void Start()
     {
         _changeClothes = GetComponent<ChangeClothes>();
@@ -24,7 +26,12 @@ public class Inventory : MonoBehaviour
 
     public void GetAllClothes()
     {
-        foreach(SO_BodyPart cloth in clothes)
+        foreach (Transform child in content.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        foreach (SO_BodyPart cloth in clothes)
         {
             AddClothUI(cloth);
         }
@@ -34,6 +41,7 @@ public class Inventory : MonoBehaviour
     {
         newPanel = Instantiate(panelPrefab, content.transform.position, Quaternion.identity);
         newPanel.GetComponentInChildren<TextMeshProUGUI>().text = cloth.ClothName;
+        newPanel.GetComponentInChildren<Image>().sprite = cloth.Icon;
         newPanel.GetComponentInChildren<Button>().onClick.AddListener(delegate { _changeClothes.Change(cloth); });
         newPanel.transform.SetParent(content.transform, true);
     }
@@ -47,6 +55,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown("p"))
         {
             SellCloth(test);
+        }
+        if (Input.GetKeyDown("i"))
+        {
+            GetAllClothes();
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
         }
     }
 
