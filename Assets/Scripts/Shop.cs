@@ -48,6 +48,7 @@ public class Shop : MonoBehaviour
                 }
             }
         }
+        updateSellClothes();
     }
 
     public void OpenShop()
@@ -57,14 +58,35 @@ public class Shop : MonoBehaviour
         playerController.SetDisableMoviment(true);
     }
 
-    public void AddClothShop(SO_BodyPart cloth, GameObject content)
+    public void updateSellClothes()
+    {
+        foreach (Transform child in sellContent.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        foreach (SO_BodyPart cloth in inventory.clothes)
+        {
+            AddClothSell(cloth);
+        }
+    }
+
+    private void AddClothShop(SO_BodyPart cloth, GameObject content)
     {
         _newItem = Instantiate(itemPrefab, content.transform.position, Quaternion.identity);
         _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + cloth.ClothPrice.ToString();
         _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
-        //_newItem.GetComponentInChildren<Image>().sprite = cloth.Icon;
         _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { inventory.BuyCloth(cloth); });
         _newItem.transform.SetParent(content.transform, true);
+    }
+
+    private void AddClothSell(SO_BodyPart cloth)
+    {
+        _newItem = Instantiate(itemPrefab, sellContent.transform.position, Quaternion.identity);
+        _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + cloth.ClothPrice.ToString();
+        _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
+        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { inventory.SellCloth(cloth); });
+        _newItem.transform.SetParent(sellContent.transform, true);
     }
 
     public void CloseShop()

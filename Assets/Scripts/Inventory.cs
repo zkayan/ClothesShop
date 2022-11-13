@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour
 
     public GameObject inventoryPanel;
 
+    public Shop shop;
+
     private void Start()
     {
         _changeClothes = GetComponent<ChangeClothes>();
@@ -71,6 +73,7 @@ public class Inventory : MonoBehaviour
             clothes.Add(cloth);
 
             AddClothUI(cloth);
+            shop.updateSellClothes();
         }
     }
 
@@ -82,6 +85,7 @@ public class Inventory : MonoBehaviour
             {
                 clothes.RemoveAt(i);
                 money += cloth.ClothPrice * 0.7f;
+                shop.updateSellClothes();
                 return;
             }
         }
