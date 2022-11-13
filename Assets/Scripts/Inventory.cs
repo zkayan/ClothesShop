@@ -50,45 +50,11 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("l"))
-        {
-            BuyCloth(test);
-        }
-        if (Input.GetKeyDown("p"))
-        {
-            SellCloth(test);
-        }
         if (Input.GetKeyDown("i"))
         {
             GetAllClothes();
             inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+            shop.CloseShop();
         }
     }
-
-    public void BuyCloth(SO_BodyPart cloth)
-    {
-        if(money >= cloth.ClothPrice)
-        {
-            money -= cloth.ClothPrice;
-            clothes.Add(cloth);
-
-            AddClothUI(cloth);
-            shop.updateSellClothes();
-        }
-    }
-
-    public void SellCloth(SO_BodyPart cloth)
-    {
-        for(int i = 0; i < clothes.Count; i++)
-        {
-            if(clothes[i] == cloth)
-            {
-                clothes.RemoveAt(i);
-                money += cloth.ClothPrice * 0.7f;
-                shop.updateSellClothes();
-                return;
-            }
-        }
-    }
-
 }

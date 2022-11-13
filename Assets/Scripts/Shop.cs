@@ -76,7 +76,7 @@ public class Shop : MonoBehaviour
         _newItem = Instantiate(itemPrefab, content.transform.position, Quaternion.identity);
         _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + cloth.ClothPrice.ToString();
         _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
-        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { inventory.BuyCloth(cloth); });
+        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { BuyCloth(cloth); });
         _newItem.transform.SetParent(content.transform, true);
     }
 
@@ -85,7 +85,7 @@ public class Shop : MonoBehaviour
         _newItem = Instantiate(itemPrefab, sellContent.transform.position, Quaternion.identity);
         _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + cloth.ClothPrice.ToString();
         _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
-        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { inventory.SellCloth(cloth); });
+        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { SellCloth(cloth); });
         _newItem.transform.SetParent(sellContent.transform, true);
     }
 
@@ -93,5 +93,31 @@ public class Shop : MonoBehaviour
     {
         gameObject.SetActive(false);
         playerController.SetDisableMoviment(false);
+    }
+
+    public void BuyCloth(SO_BodyPart cloth)
+    {
+        if (inventory.money >= cloth.ClothPrice)
+        {
+            inventory.money -= cloth.ClothPrice;
+            inventory.clothes.Add(cloth);
+
+            inventory.AddClothUI(cloth);
+            updateSellClothes();
+        }
+    }
+
+    public void SellCloth(SO_BodyPart cloth)
+    {
+        for (int i = 0; i < inventory.clothes.Count; i++)
+        {
+            if (inventory.clothes[i] == cloth)
+            {
+                inventory.clothes.RemoveAt(i);
+                inventory.money += cloth.ClothPrice * 0.7f;
+                updateSellClothes();
+                return;
+            }
+        }
     }
 }
