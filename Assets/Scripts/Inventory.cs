@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
 
     public GameObject content;
     public GameObject panelPrefab;
-    private GameObject newPanel;
+    private GameObject _newPanel;
 
     private ChangeClothes _changeClothes;
 
@@ -39,11 +39,11 @@ public class Inventory : MonoBehaviour
 
     public void AddClothUI(SO_BodyPart cloth)
     {
-        newPanel = Instantiate(panelPrefab, content.transform.position, Quaternion.identity);
-        newPanel.GetComponentInChildren<TextMeshProUGUI>().text = cloth.ClothName;
-        newPanel.GetComponentInChildren<Image>().sprite = cloth.Icon;
-        newPanel.GetComponentInChildren<Button>().onClick.AddListener(delegate { _changeClothes.Change(cloth); });
-        newPanel.transform.SetParent(content.transform, true);
+        _newPanel = Instantiate(panelPrefab, content.transform.position, Quaternion.identity);
+        _newPanel.GetComponentInChildren<TextMeshProUGUI>().text = cloth.ClothName;
+        _newPanel.GetComponentInChildren<Image>().sprite = cloth.Icon;
+        _newPanel.GetComponentInChildren<Button>().onClick.AddListener(delegate { _changeClothes.Change(cloth); });
+        _newPanel.transform.SetParent(content.transform, true);
     }
 
     private void Update()
