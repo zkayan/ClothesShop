@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Salesman
   layers:
   - Default
   - TransparentFX
@@ -47,9 +48,6 @@ TagManager:
   - name: Glasses
     uniqueID: 2757038165
     locked: 0
-  - name: Hair
-    uniqueID: 964659289
-    locked: 0
   - name: Bottom
     uniqueID: 2434579937
     locked: 0
@@ -58,4 +56,7 @@ TagManager:
     locked: 0
   - name: Shoes
     uniqueID: 1126717519
+    locked: 0
+  - name: Hair
+    uniqueID: 964659289
     locked: 0
