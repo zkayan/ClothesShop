@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 _playerMovement;
     private Animator _animator;
 
+    private bool _disableMoviment = false;
+
     private void Start()
     {
         _animator = GetComponent<Animator>();
@@ -17,12 +19,15 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _playerMovement = Vector3.zero;
-        _playerMovement.x = Input.GetAxisRaw("Horizontal");
-        _playerMovement.y = Input.GetAxisRaw("Vertical");
-        _playerMovement = Vector3.ClampMagnitude(_playerMovement, 1f);
+        if (!_disableMoviment)
+        {
+            _playerMovement = Vector3.zero;
+            _playerMovement.x = Input.GetAxisRaw("Horizontal");
+            _playerMovement.y = Input.GetAxisRaw("Vertical");
+            _playerMovement = Vector3.ClampMagnitude(_playerMovement, 1f);
 
-        UpdateAnimationAndMove();
+            UpdateAnimationAndMove();
+        }
     }
 
     private void UpdateAnimationAndMove()
@@ -43,5 +48,10 @@ public class PlayerController : MonoBehaviour
     private void MoveCharacter()
     {
         _rigidbody.MovePosition(transform.position + _playerMovement * _speed * Time.deltaTime);
+    }
+
+    public void SetDisableMoviment(bool setting)
+    {
+        _disableMoviment = setting;
     }
 }

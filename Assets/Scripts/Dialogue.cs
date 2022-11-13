@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject openDialogue;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            openDialogue.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            CloseDialogue();
+        }
+    }
+
+    public void CloseDialogue()
+    {
+        openDialogue.SetActive(false);
     }
 }
