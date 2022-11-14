@@ -10,5 +10,5 @@ public class SO_Clothes : ScriptableObject
 public class Clothes
 {
     public string bodyPartType;
-    public SO_BodyPart[] clothes;
+    public SO_Cloth[] clothes;
 }

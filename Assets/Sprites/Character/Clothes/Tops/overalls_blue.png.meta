@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -798,7 +798,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      overalls_blue_24: 433816615
       overalls_blue_5: 1115545213
       overalls_blue_11: 1264892318
       overalls_blue_20: 1758814550
@@ -814,22 +813,23 @@ TextureImporter:
       overalls_blue_3: -875342750
       overalls_blue_8: 1287935074
       overalls_blue_30: 1735651864
-      overalls_blue_2: 764430761
+      overalls_blue_23: 1488212896
+      overalls_blue_29: -1668605769
       overalls_blue_13: 1386161852
-      overalls_blue_18: 1750894570
+      overalls_blue_2: 764430761
       overalls_blue_7: -1221360652
-      overalls_blue_12: -1204980532
       overalls_blue_27: 1106879157
+      overalls_blue_12: -1204980532
+      overalls_blue_18: 1750894570
+      overalls_blue_9: -519686273
       overalls_blue_16: 896098517
       overalls_blue_4: 1039841237
-      overalls_blue_9: -519686273
+      overalls_blue_24: 433816615
       overalls_blue_6: 1813447453
-      overalls_blue_23: 1488212896
-      overalls_blue_19: 1403920053
       overalls_blue_17: -418566779
       overalls_blue_1: -1514810391
       overalls_blue_21: -1154889648
-      overalls_blue_29: -1668605769
+      overalls_blue_19: 1403920053
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

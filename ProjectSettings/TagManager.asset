@@ -51,11 +51,14 @@ TagManager:
   - name: Bottom
     uniqueID: 2434579937
     locked: 0
+  - name: Shoes
+    uniqueID: 1126717519
+    locked: 0
   - name: Top
     uniqueID: 186397549
     locked: 0
-  - name: Shoes
-    uniqueID: 1126717519
+  - name: Foreground
+    uniqueID: 1940619669
     locked: 0
   - name: Hair
     uniqueID: 964659289

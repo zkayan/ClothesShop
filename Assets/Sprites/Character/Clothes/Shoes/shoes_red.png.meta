@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -827,9 +827,9 @@ TextureImporter:
       shoes_red_16: -724864977
       shoes_red_9: 810270592
       shoes_red_22: 18303587
-      shoes_red_3: -870222672
       shoes_red_4: 886104312
       shoes_red_10: -590199916
+      shoes_red_3: -870222672
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

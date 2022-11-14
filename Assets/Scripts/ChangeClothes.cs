@@ -7,8 +7,6 @@ public class ChangeClothes : MonoBehaviour
 
     public SO_CharacterBody clothAnimationClip;
 
-    public SO_BodyPart test;
-
     private string[] _animStates = { "IdleDown", "IdleUp", "IdleRight", "IdleLeft", "WalkingDown", "WalkingUp", "WalkingRight", "WalkingLeft" };
 
     protected Animator animator;
@@ -23,15 +21,7 @@ public class ChangeClothes : MonoBehaviour
         animator.runtimeAnimatorController = animatorOverrideController;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown("k"))
-        {
-            Change(test);
-        }
-    }
-
-    public void Change(SO_BodyPart newPart)
+    public void Change(SO_Cloth newPart)
     {
         foreach(BodyPart charBodyPart in clothAnimationClip.characterBodyParts)
         {

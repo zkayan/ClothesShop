@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4744,9 +4744,9 @@ TextureImporter:
       char4_170: -2121779191
       char4_141: -1556909879
       char4_17: -1034484376
-      char4_61: 1732436135
       char4_150: 1121000498
       char4_205: -211274953
+      char4_61: 1732436135
       char4_185: -1754518315
       char4_77: 73658713
       char4_184: 968771031
@@ -4773,8 +4773,8 @@ TextureImporter:
       char4_133: -695386027
       char4_191: 675782248
       char4_27: -306462187
-      char4_52: 2130085909
       char4_70: -153042377
+      char4_52: 2130085909
       char4_74: 558486927
       char4_166: -266416021
       char4_124: -832442441
@@ -4845,9 +4845,9 @@ TextureImporter:
       char4_60: 2022566476
       char4_68: -195552981
       char4_37: 2001115594
-      char4_95: 343808316
       char4_181: -543660467
       char4_139: 1986078280
+      char4_95: 343808316
       char4_55: 71127698
       char4_152: -66084239
       char4_119: 2032836410
@@ -4860,13 +4860,13 @@ TextureImporter:
       char4_110: 771742220
       char4_35: 1857475325
       char4_73: 287192881
-      char4_66: 1366306168
+      char4_174: -2136110149
       char4_43: 1131673313
       char4_85: -1919675452
-      char4_174: -2136110149
-      char4_164: 818118895
-      char4_192: 1045626466
       char4_201: -1120411622
+      char4_192: 1045626466
+      char4_66: 1366306168
+      char4_164: 818118895
       char4_161: -277567596
       char4_80: -1573850682
       char4_144: -1827131038

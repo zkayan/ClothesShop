@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -807,7 +807,6 @@ TextureImporter:
       witch_24: 329774168
       witch_15: 1285978334
       witch_30: 1784528641
-      witch_31: 2082279828
       witch_17: 1023198423
       witch_8: 1645675594
       witch_6: 1989275722
@@ -824,6 +823,7 @@ TextureImporter:
       witch_29: 1848290178
       witch_14: -458135730
       witch_9: -1778640569
+      witch_31: 2082279828
       witch_27: -646147563
       witch_23: 305910456
       witch_11: -577887936

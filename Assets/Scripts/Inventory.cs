@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public float money = 100f;
-    public List<SO_BodyPart> clothes = new List<SO_BodyPart>();
-    public SO_BodyPart test;
+    public List<SO_Cloth> clothes = new List<SO_Cloth>();
 
     public GameObject content;
     public GameObject panelPrefab;
+    public TextMeshProUGUI textMoney;
     private GameObject _newPanel;
 
     private ChangeClothes _changeClothes;
@@ -23,6 +23,7 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         _changeClothes = GetComponent<ChangeClothes>();
+        UpdateUiMoney(money);
         GetAllClothes();
     }
 
@@ -33,17 +34,21 @@ public class Inventory : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
 
-        foreach (SO_BodyPart cloth in clothes)
+        foreach (SO_Cloth cloth in clothes)
         {
             AddClothUI(cloth);
         }
     }
 
-    public void AddClothUI(SO_BodyPart cloth)
+    public void UpdateUiMoney(float value)
+    {
+        textMoney.text = "$" + value.ToString("N2");
+    }
+
+    public void AddClothUI(SO_Cloth cloth)
     {
         _newPanel = Instantiate(panelPrefab, content.transform.position, Quaternion.identity);
-        _newPanel.GetComponentInChildren<TextMeshProUGUI>().text = cloth.ClothName;
-        _newPanel.GetComponentInChildren<Image>().sprite = cloth.Icon;
+        _newPanel.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
         _newPanel.GetComponentInChildren<Button>().onClick.AddListener(delegate { _changeClothes.Change(cloth); });
         _newPanel.transform.SetParent(content.transform, true);
     }
@@ -56,5 +61,10 @@ public class Inventory : MonoBehaviour
             inventoryPanel.SetActive(!inventoryPanel.activeSelf);
             shop.CloseShop();
         }
+    }
+
+    public void CloseInventory()
+    {
+            inventoryPanel.SetActive(false);
     }
 }
