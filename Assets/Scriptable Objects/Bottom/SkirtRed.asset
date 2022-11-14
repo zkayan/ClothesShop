@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
+  m_Name: SkirtRed
+  m_EditorClassIdentifier: 
+  ClothName: Skirt Red
+  ClothPrice: 13
+  bodyPartType: Bottom
+  bodyPartAnimationID: 3
+  Icon: {fileID: 21300000, guid: 92500e41abb86c14e8eba115fbc0e035, type: 3}
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: 6f99df152fd50884bbe03a4bb29386f1, type: 2}
+  - {fileID: 7400000, guid: 70b560c5823d46745b0763e87c6770ce, type: 2}
+  - {fileID: 7400000, guid: 4d627f7673fc00740abc50201f6c6388, type: 2}
+  - {fileID: 7400000, guid: 54201cd89b71e844c9927d62100a24b7, type: 2}
+  - {fileID: 7400000, guid: cd87b4ff557a9434dad44062bc56e736, type: 2}
+  - {fileID: 7400000, guid: 0ec19bedcda63ff448aaee01d0399f75, type: 2}
+  - {fileID: 7400000, guid: 4d2dde96976188a46ad48c2c3145529e, type: 2}
+  - {fileID: 7400000, guid: f0bad0cc9f1c3f84d96d10b4089d7595, type: 2}

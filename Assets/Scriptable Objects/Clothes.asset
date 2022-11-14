@@ -17,12 +17,20 @@ MonoBehaviour:
     clothes:
     - {fileID: 11400000, guid: eeb8ec9ec50273f409fc4661a6f92764, type: 2}
     - {fileID: 11400000, guid: 440b7580798f7c146b19f3337481e321, type: 2}
+    - {fileID: 11400000, guid: c1ecdcdc68645ca4d8b2e958e0e72a09, type: 2}
+    - {fileID: 11400000, guid: 89165faf9a607e942b75bdcf29bc531d, type: 2}
+    - {fileID: 11400000, guid: db8fde9d110a073408ab7848b634c9a1, type: 2}
+    - {fileID: 11400000, guid: 2dda353e201d3544c9a42046541e2d6b, type: 2}
   - bodyPartType: Bottom
     clothes:
     - {fileID: 11400000, guid: 032bcc61ccd91924facb5178f300f95f, type: 2}
     - {fileID: 11400000, guid: 0f903605701de1d4ead9e49c203cdbc6, type: 2}
     - {fileID: 11400000, guid: 6d98eb994d0b37041a7615c11672c971, type: 2}
+    - {fileID: 11400000, guid: 1761ff8172ec2c24586c3eab11cec14f, type: 2}
+    - {fileID: 11400000, guid: 052c638bce865ad46bcb6ca35712b44a, type: 2}
   - bodyPartType: Shoes
     clothes:
     - {fileID: 11400000, guid: b018b6b0319e212469b11bce8e60d2c1, type: 2}
+    - {fileID: 11400000, guid: fcff1bb7d01a1584cadf1d0553749b16, type: 2}
+    - {fileID: 11400000, guid: 07b41f3a7f63af142a66197eac5a4f22, type: 2}
     - {fileID: 11400000, guid: d9456ddbf8cda3d4390291c30e81b342, type: 2}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
+  m_Name: PantsSuitPink
+  m_EditorClassIdentifier: 
+  ClothName: Pants Suit Pink
+  ClothPrice: 35
+  bodyPartType: Bottom
+  bodyPartAnimationID: 4
+  Icon: {fileID: 21300000, guid: c73711ffc41f6de4cb36fd11de42eb91, type: 3}
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: 57f649084d825644b9d29e7ba0effe27, type: 2}
+  - {fileID: 7400000, guid: 8ccb30167b574d847b44129fe736b2de, type: 2}
+  - {fileID: 7400000, guid: a5354174b434d4240900ba6ef01b9ab4, type: 2}
+  - {fileID: 7400000, guid: 549824697eaf447418d2f613e7f37ad7, type: 2}
+  - {fileID: 7400000, guid: 0169e968a4a94764f8e58359773b1d2e, type: 2}
+  - {fileID: 7400000, guid: 6c7eccb075e74af4b92e6ca5b3024cd6, type: 2}
+  - {fileID: 7400000, guid: b7b8ed17b47db75468bfb1abc39305d3, type: 2}
+  - {fileID: 7400000, guid: 1cd6f28b78cb1374ead2e1a6a7f2a651, type: 2}

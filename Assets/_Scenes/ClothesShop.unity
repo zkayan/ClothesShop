@@ -10198,14 +10198,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salesman
       objectReference: {fileID: 0}
-    - target: {fileID: 1527028153958338426, guid: 7716a6c54c9ed3244867f27f765fa2ca, type: 3}
-      propertyPath: m_Size.y
-      value: 2.7091808
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527028153958338426, guid: 7716a6c54c9ed3244867f27f765fa2ca, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.91679454
-      objectReference: {fileID: 0}
     - target: {fileID: 1527028153958338427, guid: 7716a6c54c9ed3244867f27f765fa2ca, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10348,6 +10340,10 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1265543395}
+    - target: {fileID: 2169599712627719758, guid: e693a995902e57a4e80b8fdc22a8b74f, type: 3}
+      propertyPath: audioPrefabNoCoin
+      value: 
+      objectReference: {fileID: 6299580241461155578, guid: ff40ee1ac0277014894c9891aa116f64, type: 3}
     - target: {fileID: 2169599712627719759, guid: e693a995902e57a4e80b8fdc22a8b74f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
