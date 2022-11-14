@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
+  m_Name: SportyBlue
+  m_EditorClassIdentifier: 
+  ClothName: Sporty Blue
+  ClothPrice: 27
+  bodyPartType: Top
+  bodyPartAnimationID: 7
+  Icon: {fileID: 21300000, guid: c6f76edc7bbedfa43a06c89612a641b2, type: 3}
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: e09e83651888c4f419e5c4b394523a8f, type: 2}
+  - {fileID: 7400000, guid: df355d73ddbae954a8f664894622bd6b, type: 2}
+  - {fileID: 7400000, guid: 281a58350e041b54bbf8855572e05d7e, type: 2}
+  - {fileID: 7400000, guid: 8200541c56bf01a46904918da42ae107, type: 2}
+  - {fileID: 7400000, guid: a7c18851820fe434eb06c255000d3768, type: 2}
+  - {fileID: 7400000, guid: 186b1fbb39b83a74888cbec4453adb37, type: 2}
+  - {fileID: 7400000, guid: c66cfc12392fcda45ac4bcdd118aa534, type: 2}
+  - {fileID: 7400000, guid: c70f6638fc8ce5f43bf9839d8944e685, type: 2}

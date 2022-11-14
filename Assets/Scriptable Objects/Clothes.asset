@@ -21,6 +21,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 89165faf9a607e942b75bdcf29bc531d, type: 2}
     - {fileID: 11400000, guid: db8fde9d110a073408ab7848b634c9a1, type: 2}
     - {fileID: 11400000, guid: 2dda353e201d3544c9a42046541e2d6b, type: 2}
+    - {fileID: 11400000, guid: 760eb672e09303d4abfea0721ac6cf78, type: 2}
+    - {fileID: 11400000, guid: 972665d9b6435c64693067b151690ada, type: 2}
+    - {fileID: 11400000, guid: 4dff4aea98bd39547ab9977e0a5db624, type: 2}
   - bodyPartType: Bottom
     clothes:
     - {fileID: 11400000, guid: 032bcc61ccd91924facb5178f300f95f, type: 2}

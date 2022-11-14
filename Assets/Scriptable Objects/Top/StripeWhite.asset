@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92de888c8d8a6341bec158c7f76cdb4, type: 3}
+  m_Name: StripeWhite
+  m_EditorClassIdentifier: 
+  ClothName: Stripe White
+  ClothPrice: 14
+  bodyPartType: Top
+  bodyPartAnimationID: 6
+  Icon: {fileID: 21300000, guid: 5458cdfed0026cb4aac6e6a642b8728c, type: 3}
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: 5000a9d3b58e370469d0892d2301feff, type: 2}
+  - {fileID: 7400000, guid: 1d2cb5b7398ace54e8fd27b72720f723, type: 2}
+  - {fileID: 7400000, guid: b7442775eb8f4b844acfedf58113bb3b, type: 2}
+  - {fileID: 7400000, guid: 62f7b00c3f2291e4fa74cabc4da3e11e, type: 2}
+  - {fileID: 7400000, guid: ab0f003acaa4fd94bab0f6cf763c1f03, type: 2}
+  - {fileID: 7400000, guid: 76fbb2a796c240b4baaa44c9510f1c32, type: 2}
+  - {fileID: 7400000, guid: f4a37c182c64de741bfcd6fa2016277d, type: 2}
+  - {fileID: 7400000, guid: 8f6b251ed1d7a264b8e3e4b5c28b9666, type: 2}
