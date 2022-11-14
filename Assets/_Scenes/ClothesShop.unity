@@ -10198,6 +10198,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salesman
       objectReference: {fileID: 0}
+    - target: {fileID: 1527028153958338426, guid: 7716a6c54c9ed3244867f27f765fa2ca, type: 3}
+      propertyPath: m_Size.y
+      value: 2.7091808
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527028153958338426, guid: 7716a6c54c9ed3244867f27f765fa2ca, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.91679454
+      objectReference: {fileID: 0}
     - target: {fileID: 1527028153958338427, guid: 7716a6c54c9ed3244867f27f765fa2ca, type: 3}
       propertyPath: m_RootOrder
       value: 3

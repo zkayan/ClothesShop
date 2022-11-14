@@ -80,20 +80,64 @@ public class Shop : MonoBehaviour
 
     private void AddClothShop(SO_Cloth cloth, GameObject content)
     {
-        _newItem = Instantiate(itemPrefab, content.transform.position, Quaternion.identity);
-        _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + cloth.ClothPrice.ToString("N2");
-        _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
-        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { BuyCloth(cloth); });
-        _newItem.transform.SetParent(content.transform, true);
+        if (!inventory.clothes.Find(inventoryCloth => inventoryCloth.ClothName == cloth.ClothName))
+        {
+            _newItem = Instantiate(itemPrefab, content.transform.position, Quaternion.identity);
+            _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + cloth.ClothPrice.ToString("N2");
+            _newItem.name = cloth.ClothName;
+            _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
+            _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { BuyCloth(cloth); });
+            _newItem.transform.SetParent(content.transform, true);
+        }
     }
 
     private void AddClothSell(SO_Cloth cloth)
     {
-        _newItem = Instantiate(itemPrefab, sellContent.transform.position, Quaternion.identity);
-        _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + (cloth.ClothPrice * 0.7f).ToString("N2");
-        _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
-        _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { SellCloth(cloth); });
-        _newItem.transform.SetParent(sellContent.transform, true);
+        if (!inventory.equipedClothes.Find(eqCloth => eqCloth.ClothName == cloth.ClothName))
+        {
+            _newItem = Instantiate(itemPrefab, sellContent.transform.position, Quaternion.identity);
+            _newItem.GetComponentInChildren<TextMeshProUGUI>().text = "$" + (cloth.ClothPrice * 0.7f).ToString("N2");
+            _newItem.name = cloth.ClothName;
+            _newItem.transform.Find("Icon").GetComponent<Image>().sprite = cloth.Icon;
+            _newItem.GetComponentInChildren<Button>().onClick.AddListener(delegate { SellCloth(cloth); });
+            _newItem.transform.SetParent(sellContent.transform, true);
+        }
+    }
+    
+    public void RemoveItem(string itemName)
+    {
+        if (topsContent.transform.Find(itemName))
+        {
+            GameObject.Destroy(topsContent.transform.Find(itemName).gameObject);
+        }
+        else if (bottomsContent.transform.Find(itemName))
+        {
+            GameObject.Destroy(bottomsContent.transform.Find(itemName).gameObject);
+        }
+        else if (shoesContent.transform.Find(itemName))
+        {
+            GameObject.Destroy(shoesContent.transform.Find(itemName).gameObject);
+        }
+        else if (sellContent.transform.Find(itemName))
+        {
+            GameObject.Destroy(sellContent.transform.Find(itemName).gameObject);
+        }
+    }
+
+    public void AddItem(SO_Cloth cloth)
+    {
+        if (cloth.bodyPartType == "Top")
+        {
+            AddClothShop(cloth, topsContent);
+        }
+        else if (cloth.bodyPartType == "Bottom")
+        {
+            AddClothShop(cloth, bottomsContent);
+        }
+        else if (cloth.bodyPartType == "Shoes")
+        {
+            AddClothShop(cloth, shoesContent);
+        }
     }
 
     public void BuyCloth(SO_Cloth cloth)
@@ -105,6 +149,7 @@ public class Shop : MonoBehaviour
             inventory.clothes.Add(cloth);
 
             inventory.AddClothUI(cloth);
+            RemoveItem(cloth.ClothName);
             updateSellClothes();
         }
     }
@@ -118,8 +163,8 @@ public class Shop : MonoBehaviour
                 inventory.clothes.RemoveAt(i);
                 inventory.money += cloth.ClothPrice * 0.7f;
                 inventory.UpdateUiMoney(inventory.money);
+                AddItem(cloth);
                 updateSellClothes();
-                return;
             }
         }
     }
